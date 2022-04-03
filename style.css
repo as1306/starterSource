@@ -1,0 +1,99 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  background-color: #642580;
+}
+
+.cd-logo,
+.layer-cake,
+.kitchen-equipment,
+.cake-ingredients,
+.bowl-of-cakemix,
+.cake-in-oven,
+.decorated-cake {
+  position: relative;
+  /*opacity: 0.7; optional will put a slide fade on the background images  */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #642580;
+  background-size: cover;
+  min-height: 50%;
+  /* how big the gap is between text sections */
+}
+
+.cd-logo {
+  background-image: url("CoderDojo.png");
+  min-height: 100%;
+  background-size: auto;
+}
+
+.layer-cake {
+  background-image: url("img_parallax.jpg");
+}
+
+.kitchen-equipment {
+  background-image: url("utensils.JPG");
+}
+
+.cake-ingredients {
+  background-image: url("ingredients.jpg");
+}
+
+.bowl-of-cakemix {
+  background-image: url("mixer.jpg");
+}
+
+.cake-in-oven {
+  background-image: url("oven.jpg");
+}
+
+.decorated-cake {
+  background-image: url("rosecake.jpg");
+  min-height: 100%;
+  background-size: auto;
+}
+
+.caption {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+  background-color: #41BAC1;
+  color: White;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+  text-align: center
+}
+
+.textSection {
+  background-color: #642580;
+  padding: 50px 80px;
+}
+
+/* Turn off parallax scrolling for tablets and phones as it is not supported */
+@media only screen and (max-device-width: 1024px) {
+
+  .cd-logo,
+  .layer-cake,
+  .kitchen-equipment,
+  .cake-ingredients,
+  .bowl-of-cakemix,
+  .cake-in-oven,
+  .decorated-cake {
+    background-attachment: scroll;
+  }
+}
